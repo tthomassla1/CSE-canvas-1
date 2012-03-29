@@ -23,9 +23,7 @@ canvas_painter.html
 		<script>
 			var canvas = document.getElementById('myCanvas');
 			var ctx = canvas.getContext('2d');
-			var form = document.getElementById('canvasForm');
-			form.addEventListener('submit', function(event) {
-				event.preventDefault();
+			
 				
 				drawCircle(form.x.value, form.y.value, form.radius.value, form.color.value);
 			});
